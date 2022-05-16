@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários Cadastrados</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="cabecalho">
+            <h2>Pessoas Cadastradas</h2>
+            <form class="formulario">
+                <input class="cadastrar" type="submit" value="Cadastrar Pessoas">
+
+                <h2 id="buscarPessoas">Busca por pessoas</h2>
+                <label class="buscar">
+
+                    <input type="text" class="busca" value="" placeholder="Busque por nome ou email">
+                </label>
+                <input class="botaoBuscar" type="submit" value="Buscar">
+
+                <div class="selecionar">
+                    <p>Mostrar até: </p>
+                    <select class="caixa" name="valores">
+
+                        <option value="0">0
+                        <option value="1">1
+                        <option value="2">2
+                        <option value="3">3
+                        <option value="4">4
+                        <option value="5">5
+                        <option value="6">6
+                        <option value="7">7
+                        <option value="8">8
+                        <option value="9">9
+                        <option value="10">10
+                        <option value="11">11
+                        <option value="12">12
+                        <option value="13">13
+                        <option value="14">14
+                        <option value="15">15
+                        <option value="16">16
+                        <option value="17">17
+                        <option value="18">18
+                        <option value="19">19
+                        <option value="20">20
+                    </select>
+                    <p>Resultados</p>
+                </div>
+            </form>
+        </header>
+    </div>
+    <main>
+        <button class="botaoBuscar" type="button" id="render-table">Renderizar</button>
+
+        <button class="botaoBuscar" type="button" id="nome-desc">Nome Descrescente</button>
+
+        <button class="botaoBuscar" type="button" id="nome-asc">Nome Crescente</button>
+        
+        <button class="botaoBuscar" type="button" id="sobrenome-desc">Sobrenome Decrescente</button>
+        
+        <button class="botaoBuscar" type="button" id="sobrenome-asc">Sobrenome Crescente</button>
+        
+        <button class="botaoBuscar" type="button" id="email-desc">Email Decrescente</button>
+        
+        <button class="botaoBuscar" type="button" id="email-asc">Email Crescente</button>
+
+        <table class="tabela">
+
+            <thead>
+                <tr>
+                    <td>
+                        Nome
+                    </td>
+                    <td>
+                        Sobrenome
+                    </td>
+                    <td>
+                        Email
+                    </td>
+                    <td>
+                        Função Nome
+                    </td>
+                </tr>
+            </thead>
+
+            <tbody class="corpoTabela">
+
+                <tr class="usuario">
+
+                    <td>
+                        <label  class = "nome" name="nome"><input type="checkbox" class="checkbox">Artur</label>
+                    </td>
+                    <td class="sobrenome" name="sobrenome">Santoro</td>
+                    <td class="email" name="email">artur.santoro@sienacompany.com</td>
+                    
+                    <td class="tdBotao"> <button class="botaoPegarNome">Pegar Nome</button></td>
+                </tr>
+
+                <tr class="usuario">
+
+                    <td>
+                        <label class = "nome" name="nome"><input type="checkbox" class="checkbox"> Breno</label></td>
+                    <td class="sobrenome" name="sobrenome">Schneider</td>
+                    <td class="email" name="email">breno.scheneider@sienacompany.com</td>
+                    <td class="tdBotao"> <button class="botaoPegarnome">Pegar Nome</button></td>
+                </tr>
+
+                <tr class="usuario">
+
+                    <td>
+                        <label class = "nome" name="nome"><input type="checkbox" class="checkbox"> Caio</label></td>
+                    <td class="sobrenome" name="sobrenome">Torrecillas</td>
+                    <td class="email" name="email">caio.torrecillas@sienacompany.com</td>
+                    <td class="tdBotao"> <button class="botaoPegarnome">Pegar Nome</button></td>
+                </tr>
+
+                <tr class="usuario">
+                    <td>
+                        <label class = "nome" name="nome"><input type="checkbox" class="checkbox"> Denis</label></td>
+                    <td class="sobrenome" name="sobrenome">Camargo</td>
+                    <td class="email" name="email">denis.camargo@sienacompany.com</td>
+                    <td class="tdBotao"> <button class="botaoPegarnome">Pegar Nome</button></td>
+                </tr>
+
+                <tr class="usuario">
+                    <td>
+                        <label class = "nome" name="nome"><input type="checkbox" class="checkbox"> Hellen</label></td>
+                    <td class="sobrenome" name="sobrenome">Freire</td>
+                    <td class="email" name="email">hellen.freire@sienacompany.com</td>
+                    <td class="tdBotao"> <button class="botaoPegarnome">Pegar Nome</button></td>
+                </tr>
+
+                <tr class="usuario">
+                    <td>
+                        <label class = "nome" name="nome"><input type="checkbox" class="checkbox"> Igor</label></td>
+                    <td class="sobrenome" name="sobrenome"> Guimarães</td>
+                    <td class="email" name="email">igor.guimaraes@sienacompany.com</td>
+                    <td class="tdBotao"> <button class="botaoPegarnome">Pegar Nome</button></td>
+                </tr>
+
+                <tr class="usuario">
+                    <td>
+                        <label class = "nome" name="nome"><input type="checkbox" class="checkbox"> João</label></td>
+                    <td class="sobrenome" name="sobrenome">Duarte</td>
+                    <td class="email" name="email">joao.duarte@sienacompany.com</td>
+                    <td class="tdBotao"> <button class="botaoPegarnome">Pegar Nome</button></td>
+                </tr>
+
+                <tr class="usuario">
+                    <td>
+                        <label class = "nome" name="nome"><input type="checkbox" class="checkbox"> Kevin</label></td>
+                    <td class="sobrenome" name="sobrenome">Albuquerque</td>
+                    <td class="email" name="email">kevin.albuquerque@sienacompany.com</td>
+                    <td class="tdBotao"> <button class="botaoPegarnome">Pegar Nome</button></td>
+                </tr>
+
+                <tr class="usuario">
+                    <td>
+                        <label class = "nome" name="nome"><input type="checkbox" class="checkbox"> Lino</label></td>
+                    <td class="sobrenome" name="sobrenome">Jordan</td>
+                    <td class="email" name="email">lino.jordan@sienacompany.com</td>
+                    <td class="tdBotao"> <button class="botaoPegarnome">Pegar Nome</button></td>
+                </tr>
+
+                <tr class="usuario">
+                    <td>
+                        <label class = "nome" name="nome"><input type="checkbox" class="checkbox"> Marco</label></td>
+                    <td class="sobrenome" name="sobrenome">Leonardo</td>
+                    <td class="email" name="email">marco.leonardo@sienacompany.com</td>
+                    <td class="tdBotao"> <button class="botaoPegarnome">Pegar Nome</button></td>
+                </tr>
+
+                <tr class="usuario">
+                    <td>
+                        <label class = "nome" name="nome"><input type="checkbox" class="checkbox"> Noaldo </label></td>
+                    <td class="sobrenome" name="sobrenome">Noronha</td>
+                    <td class="email" name="email">noaldo.noronha@sienacompany.com</td>
+                    <td class="tdBotao"> <button class="botaoPegarnome">Pegar Nome</button></td>
+                </tr>
+
+                <tr class="usuario">
+                    <td>
+                        <label class = "nome" name="nome"><input type="checkbox" class="checkbox"> Olavo</label></td>
+                    <td class="sobrenome" name="sobrenome">Carvalho</td>
+                    <td class="email" name="email">olavo.carvalho@sienacompany.com</td>
+                    <td class="tdBotao"> <button class="botaoPegarnome">Pegar Nome</button></td>
+                </tr>
+
+                <tr class="usuario">
+                    <td>
+                        <label class = "nome" name="nome"><input type="checkbox" class="checkbox"> Paula</label></td>
+                    <td class="sobrenome" name="sobrenome">Nobre</td>
+                    <td class="email" name="email">paula.nobre@sienacompany.com</td>
+                    <td class="tdBotao"> <button class="botaoPegarnome">Pegar Nome</button></td>
+                </tr>
+
+                <tr class="usuario">
+                    <td>
+                        <label class = "nome" name="nome"><input type="checkbox" class="checkbox"> Quíron</label></td>
+                    <td class="sobrenome" name="sobrenome">Prata</td>
+                    <td class="email" name="email">quiron.prata@sienacompany.com</td>
+                    <td class="tdBotao"> <button class="botaoPegarnome">Pegar Nome</button></td>
+                </tr>
+
+                <tr class="usuario">
+                    <td>
+                        <label class = "nome" name="nome"><input type="checkbox" class="checkbox"> Raul</label></td>
+                    <td class="sobrenome" name="sobrenome">Seixas</td>
+                    <td class="email" name="email">raul.seixas@sienacompany.com</td>
+                    <td class="tdBotao"> <button class="botaoPegarnome">Pegar Nome</button></td>
+                </tr>
+
+                <tr class="usuario">
+                    <td>
+                        <label class = "nome" name="nome"><input type="checkbox" class="checkbox"> Suzana</label></td>
+                    <td class="sobrenome" name="sobrenome">Paula</td>
+                    <td class="email" name="email">suzana.paula@sienacompany.com</td>
+                    <td class="tdBotao"> <button class="botaoPegarnome">Pegar Nome</button></td>
+                </tr>
+
+                <tr class="usuario">
+                    <td>
+                        <label class = "nome" name="nome"><input type="checkbox" class="checkbox"> Túlio</label></td>
+                    <td class="sobrenome" name="sobrenome">Santos</td>
+                    <td class="email" name="email">tulio.santos@sienacompany.com</td>
+                    <td class="tdBotao"> <button class="botaoPegarnome">Pegar Nome</button></td>
+                </tr>
+
+                <tr class="usuario">
+                    <td>
+                        <label class = "nome" name="nome"><input type="checkbox" class="checkbox"> Ulisses</label></td>
+                    <td class="sobrenome" name="sobrenome">Santoro</td>
+                    <td class="email" name="email">ulises.santoro@sienacompany.com</td>
+                    <td class="tdBotao"> <button class="botaoPegarnome">Pegar Nome</button></td>
+                </tr>
+
+                <tr class="usuario">
+                    <td>
+                        <label class = "nome" name="nome"><input type="checkbox" class="checkbox"> Vânia</label></td>
+                    <td class="sobrenome" name="sobrenome">Vanusa</td>
+                    <td class="email" name="email">vania.vanusa@sienacompany.com</td>
+                    <td class="tdBotao"> <button class="botaoPegarnome">Pegar Nome</button></td>
+                </tr>
+
+                <tr class="usuario">
+                    <td>
+                        <label class = "nome" name="nome"><input type="checkbox" class="checkbox"> Wesley</label></td>
+                    <td class="sobrenome" name="sobrenome">Diorginis</td>
+                    <td class="email" name="email">wesley.diorginis@sienacompany.com</td>
+                    <td class="tdBotao"> <button class="botaoPegarnome">Pegar Nome</button></td>
+                </tr>
+            </tbody>
+
+
+        </table>
+
+    </main>
+
+    <script src="javaScript/jquery-3.6.0.js"></script>
+    <script src="javaScript/order.js"></script>
+</body>
+
+</html>

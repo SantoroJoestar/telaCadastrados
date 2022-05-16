@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Josefin+Sans:ital,wght@1,200&family=Zilla+Slab&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Zilla Slab', serif;
+}
+
+body{
+    background-color: azure;
+}
+
+.cabecalho{
+    display: flex;
+   flex-flow: row wrap;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+
+.cadastrar{
+    padding: 0.8em 1em;
+    margin-left: 108em;
+    font-weight: bold;
+    background: blue;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid rgb(241, 235, 235);
+    border-radius: 5px;
+}
+
+#buscarPessoas{
+    margin-right: 90em;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: black;
+}
+
+.buscar{
+    display: inline-block;
+    position: relative;
+    margin-left: -0.1em;
+    margin-top: 0.3em;
+    padding: 0.5em 1em;
+    font-weight: bold;
+    border: 2px solid rgb(219, 212, 212);
+    border-radius: 5px;
+    opacity: 45%;
+}
+
+.botaoBuscar{
+    padding: 0.5em 1em;
+    margin-left: 0.7em;
+    background: blue;
+    color: white;
+    font-size: 1rem;
+    border: 1px solid rgb(241, 235, 235);
+    border-radius: 5px;
+}
+
+.selecionar{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin-right: 1em;
+  
+}
+
+.caixa{
+    margin-top: -0.7em;
+    padding: 0.6em 0.8em;
+    border: 1px solid rgb(226, 226, 226);
+    border-radius: 8px;
+}
+
+.container{
+    padding: 0.3em;
+    margin: 0.3em;
+}
+
+.tabela{
+    margin: 2em 0;
+}
+
+thead {
+    background-color: #f9f9f9;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+td, th{
+    
+    padding: 2em 11em ;
+    border-bottom: 2px solid #e7dbdb;
+}
+
+.checkbox{
+    margin-left: -1.3em;
+    transform: scale(1.2);
+    opacity: 29%;   
+}
+
+.botaoBuscar:hover, .cadastrar:hover{
+    transform: scale(1.2);
+    transition: 1s all;
+}
+
+td:hover{
+    background-color: rgb(240, 237, 235);
+    transition: 0.4s all;
+}
+
+td:active{
+    background-color: #d4cfcf;
+}
+
+.invisivel{
+    display: none;
+}
